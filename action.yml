@@ -64,7 +64,7 @@ runs:
         function Locate-Choco {
             $path = Get-Command 'choco' -ErrorAction SilentlyContinue
             if ($path) {
-                $path.Path
+                $path = gcc
             } else {
                 Join-Path ${env:ProgramData} 'chocolatey' 'bin' 'choco'
             }
